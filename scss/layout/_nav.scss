@@ -1,0 +1,17 @@
+nav{
+    .l-nav-lists{//ul
+        .l-nav-list{//li
+            a{
+                @include mq(tb){
+                    padding: 2% 25% 2% 2%;
+                }
+                @include mq(tb-pc1400){
+                    padding: 5% 40% 5% 2%;
+                }
+                @include mq(tb-pc1600){
+                    padding: 5% 50% 5% 2%;
+                }
+            }
+        }
+    }
+}
