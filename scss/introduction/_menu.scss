@@ -11,7 +11,7 @@
     right: 0;
     width: 70px;
     height: 7px;
-    z-index: 10;
+    z-index: 9999;
     @include mq(tb){
         top: 0;
         right: 0;
@@ -40,7 +40,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 5px;
-            width: 34px;
+            width: 30px;
             display: block;
 
             @include mq(tb){
@@ -82,6 +82,9 @@
             -webkit-transition: all .2s ease-in-out;
             -o-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
+            &.bottom{
+                margin-bottom: 0;
+            }
             &:last-child{
                 margin-bottom: 0;
             }
@@ -97,8 +100,8 @@
                     font-size: .7rem;
                     color: #fff;
                     text-decoration: none;
-                    padding: 12px 12px 13px 50px;
-                    border-bottom: #DDDDDD 1px solid;
+                    padding: 12px 0 13px 0;
+                    // border-bottom: #DDDDDD 1px solid;
                     @include mq(tb){
                         font-size: 1rem;
                     }
@@ -111,50 +114,15 @@
                 .op_innerLink {
                     cursor: pointer;
                 }
-            }
-        }
-    }
-    // ナビ2
-    .navi2{
-        @include mq(sp){
-            display: none;
-        }
-        @include mq(tb){
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            width: 100%;
-            z-index: 2;
-            li{
-                margin-bottom: 5px;
-                text-align: center;
-                &:last-child{
-                    margin-bottom: 25px;
-                }
-                @include mq(tb){
-                    margin-bottom: 15px;
-                    text-align: center;
-                    &:last-child{
-                        margin-bottom: 25px;
-                    }
-                }
-                a{
-                    font-size: .7rem;
-                    transition: 0.5s;
-                    text-decoration: none;
-                    color: $main-color--b;
-                    @include mq(tb){
-                        font-size: 1rem;
-                    }
-                    &:hover{
-                        opacity: 0.5;
-                        border-bottom: #999 1px solid;
+                &.-p02{
+                    a{
+                        // padding: 0;
                     }
                 }
             }
         }
     }
+
     // ボタンエリア
     .btnArea{
     // .navi ul{
@@ -163,7 +131,6 @@
         flex-wrap: wrap;
         margin: 30px 30px 50px;
         li{
-            // position: relative;
             display:inline-block;
             width: calc(45% - 10px);
             margin-bottom: 20px;
@@ -225,6 +192,14 @@
                 }
             }
         }
+        &.-p02{
+            flex-wrap: wrap;
+            justify-content: baseline;
+            margin: auto;
+            li{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -277,9 +252,9 @@ display: none;
 }
 
 .js_humburgerOpen .el_humburger span.el_humburger_bar.top {
-    -webkit-transform: translateY(12px) rotate(-45deg);
-    -ms-transform: translateY(12px) rotate(-45deg);
-    transform: translateY(12px) rotate(-45deg);
+    -webkit-transform: translateY(6px) rotate(-45deg);
+    -ms-transform: translateY(6px) rotate(-45deg);
+    transform: translateY(6px) rotate(-45deg);
 }
 
 .js_humburgerOpen .el_humburger span.el_humburger_bar.middle {
@@ -287,9 +262,9 @@ display: none;
 }
 
 .js_humburgerOpen .el_humburger span.el_humburger_bar.bottom {
-    -webkit-transform: translateY(-12px) rotate(45deg);
-    -ms-transform: translateY(-12px) rotate(45deg);
-    transform: translateY(-12px) rotate(45deg);
+    -webkit-transform: translateY(-6px) rotate(45deg);
+    -ms-transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-6px) rotate(45deg);
 }
 
 .el_humburgerButton.el_humburgerButton__close {
@@ -322,7 +297,7 @@ display: none;
     top: 0;
     right: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(0 0 0 / 85%);
     width: 0;
     z-index: 3;
     padding-top: 100px;
@@ -338,7 +313,8 @@ display: none;
     @media screen and (max-width: 840px) {
         .js_humburgerOpen .navi {
         width: 100%;
-        padding: 70px 5% 0;
+        // padding: 70px 5% 0;
+        padding: 70px 15% 0;
     }
 }
 

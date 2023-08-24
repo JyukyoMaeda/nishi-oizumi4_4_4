@@ -815,7 +815,7 @@ img {
 .l-flex--area .l-flex--contents.-contact-box_okano {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   margin: auto;
 }
@@ -4434,7 +4434,7 @@ svg#bottomBtn_right .cls-2 {
   right: 0;
   width: 70px;
   height: 7px;
-  z-index: 10;
+  z-index: 9999;
 }
 @media screen and (min-width: 767px) {
   .menu_box {
@@ -4469,7 +4469,7 @@ svg#bottomBtn_right .cls-2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
-  width: 34px;
+  width: 30px;
   display: block;
 }
 @media screen and (min-width: 767px) {
@@ -4508,6 +4508,9 @@ svg#bottomBtn_right .cls-2 {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.menu_box .el_humburger .el_humburger_bar.bottom {
+  margin-bottom: 0;
+}
 .menu_box .el_humburger .el_humburger_bar:last-child {
   margin-bottom: 0;
 }
@@ -4519,8 +4522,7 @@ svg#bottomBtn_right .cls-2 {
   font-size: 0.7rem;
   color: #fff;
   text-decoration: none;
-  padding: 12px 12px 13px 50px;
-  border-bottom: #DDDDDD 1px solid;
+  padding: 12px 0 13px 0;
 }
 @media screen and (min-width: 767px) {
   .menu_box .navi .navi_inner .navi_item a {
@@ -4534,56 +4536,6 @@ svg#bottomBtn_right .cls-2 {
 }
 .menu_box .navi .navi_inner .navi_item .op_innerLink {
   cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-  .menu_box .navi2 {
-    display: none;
-  }
-}
-@media screen and (min-width: 767px) {
-  .menu_box .navi2 {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: 2;
-  }
-  .menu_box .navi2 li {
-    margin-bottom: 5px;
-    text-align: center;
-  }
-  .menu_box .navi2 li:last-child {
-    margin-bottom: 25px;
-  }
-}
-@media screen and (min-width: 767px) and (min-width: 767px) {
-  .menu_box .navi2 li {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  .menu_box .navi2 li:last-child {
-    margin-bottom: 25px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .menu_box .navi2 li a {
-    font-size: 0.7rem;
-    transition: 0.5s;
-    text-decoration: none;
-    color: #000000;
-  }
-}
-@media screen and (min-width: 767px) and (min-width: 767px) {
-  .menu_box .navi2 li a {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 767px) {
-  .menu_box .navi2 li a:hover {
-    opacity: 0.5;
-    border-bottom: #999 1px solid;
-  }
 }
 .menu_box .btnArea {
   display: flex;
@@ -4639,6 +4591,14 @@ svg#bottomBtn_right .cls-2 {
 .menu_box .btnArea li:nth-child(4) a::before {
   content: "\f015";
 }
+.menu_box .btnArea.-p02 {
+  flex-wrap: wrap;
+  justify-content: baseline;
+  margin: auto;
+}
+.menu_box .btnArea.-p02 li {
+  width: 100%;
+}
 
 /*ハンバーガーボタン*/
 /*
@@ -4667,9 +4627,9 @@ svg#bottomBtn_right .cls-2 {
   }
 }
 .js_humburgerOpen .el_humburger span.el_humburger_bar.top {
-  -webkit-transform: translateY(12px) rotate(-45deg);
-  -ms-transform: translateY(12px) rotate(-45deg);
-  transform: translateY(12px) rotate(-45deg);
+  -webkit-transform: translateY(6px) rotate(-45deg);
+  -ms-transform: translateY(6px) rotate(-45deg);
+  transform: translateY(6px) rotate(-45deg);
 }
 
 .js_humburgerOpen .el_humburger span.el_humburger_bar.middle {
@@ -4677,9 +4637,9 @@ svg#bottomBtn_right .cls-2 {
 }
 
 .js_humburgerOpen .el_humburger span.el_humburger_bar.bottom {
-  -webkit-transform: translateY(-12px) rotate(45deg);
-  -ms-transform: translateY(-12px) rotate(45deg);
-  transform: translateY(-12px) rotate(45deg);
+  -webkit-transform: translateY(-6px) rotate(45deg);
+  -ms-transform: translateY(-6px) rotate(45deg);
+  transform: translateY(-6px) rotate(45deg);
 }
 
 .el_humburgerButton.el_humburgerButton__close {
@@ -4712,7 +4672,7 @@ svg#bottomBtn_right .cls-2 {
   top: 0;
   right: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   width: 0;
   z-index: 3;
   padding-top: 100px;
@@ -4731,7 +4691,7 @@ svg#bottomBtn_right .cls-2 {
 @media screen and (max-width: 840px) {
   .js_humburgerOpen .navi {
     width: 100%;
-    padding: 70px 5% 0;
+    padding: 70px 15% 0;
   }
 }
 header {

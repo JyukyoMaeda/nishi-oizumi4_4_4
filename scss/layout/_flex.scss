@@ -223,7 +223,7 @@
 		&.-contact-box_okano{
 			display: flex;
 			flex-wrap: nowrap;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			width: 100%;
 			margin: auto;
 			@include mq(tb){
