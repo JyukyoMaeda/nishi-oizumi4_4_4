@@ -19,9 +19,9 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 				&.-parallax_bg{//ここに背景を指定する。
-					background-image: url(../images/bg/header_bg_s.jpg);
+					// background-image: url(../images/bg/header_bg_s.jpg);
 					@include mq(tb){
-						background-image: url(../images/bg/header_bg.jpg);
+						background-image: url(../images/bg/kenzai02-bg.jpg);
 					}
 				}
 			}
@@ -72,6 +72,17 @@
 				a{
 					display: block;
 					padding: 0% 24%;
+				}
+			}
+
+
+
+			&.-d-btnArea{
+				@include mq(tb){
+					top: 80%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 35%;
 				}
 			}
 

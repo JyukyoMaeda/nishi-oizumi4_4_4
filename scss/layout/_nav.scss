@@ -6,10 +6,10 @@ nav{
                     padding: 2% 25% 2% 2%;
                 }
                 @include mq(tb-pc1400){
-                    padding: 5% 40% 5% 2%;
+                    padding: 3% 40% 3% 2%;
                 }
                 @include mq(tb-pc1600){
-                    padding: 5% 50% 5% 2%;
+                    padding: 4% 50% 4% 2%;
                 }
             }
         }

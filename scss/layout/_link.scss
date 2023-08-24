@@ -43,6 +43,41 @@
             }
         }
     }
+    &.-p04{
+        display: block;
+        width: 100%;
+        border: 1px solid white;
+        transition: all .5s;
+        overflow: hidden;
+        img{
+            background: $site-color01;
+            transition: all .5s;
+            z-index: -1;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 0%;
+            display: block;
+            background: $site-color01-hover;
+            transition: all .5s;
+            z-index: -2;
+        }
+        &:hover{
+            border: 1px solid inherit !important;
+            border-radius: 30px;
+            // transform: scale(0.95);
+            img{
+                background: inherit;
+            }
+            &::after{
+                width: 100%;
+                border-radius: 30px;
+            }
+        }
+    }
     &.-p05{
         position: relative;
         display: block;

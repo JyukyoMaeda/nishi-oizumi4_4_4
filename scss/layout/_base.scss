@@ -100,6 +100,12 @@ img{
 		margin: auto;
 	}
 }
+.tb-w90{
+	@include mq(tb){
+		width: 90% !important;
+		margin: auto;
+	}
+}
 .tb-w95{
 	@include mq(tb){
 		width: 95% !important;
