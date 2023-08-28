@@ -223,15 +223,16 @@
 		&.-contact-box_okano{
 			display: flex;
 			flex-wrap: nowrap;
-			justify-content: space-evenly;
-			width: 100%;
+			justify-content: space-between;
+			width: 98%;
 			margin: auto;
 			@include mq(tb){
 				width: 75%;
 				justify-content: space-evenly;
 			}
 			.flexItem{
-				width: calc(30%) !important;
+				width: calc(46%) !important;
+				// width: calc(30%) !important;
 				@include mq(tb){
 					width: 30% !important;
 				}

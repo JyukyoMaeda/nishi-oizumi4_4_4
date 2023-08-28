@@ -815,8 +815,8 @@ img {
 .l-flex--area .l-flex--contents.-contact-box_okano {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: space-between;
+  width: 98%;
   margin: auto;
 }
 @media screen and (min-width: 767px) {
@@ -826,7 +826,7 @@ img {
   }
 }
 .l-flex--area .l-flex--contents.-contact-box_okano .flexItem {
-  width: 30% !important;
+  width: 46% !important;
 }
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-contact-box_okano .flexItem {
